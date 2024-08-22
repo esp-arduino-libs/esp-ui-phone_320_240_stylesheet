@@ -14,6 +14,6 @@ jobs:
       - name: Upload components to component service
         uses: espressif/upload-components-ci-action@v1
         with:
-          name: "esp-ui-phone_[T_WIDTH]_[T_HEIGHT]_stylesheet"
+          name: "esp-ui-phone_320_240_stylesheet"
           namespace: "espressif"
           api_token: ${{secrets.IDF_COMPONENT_API_TOKEN}}

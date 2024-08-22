@@ -11,10 +11,10 @@
 extern "C" {
 #endif
 
-#define ESP_UI_PHONE_[T_WIDTH]_[T_HEIGHT]_DARK_APP_LAUNCHER_ICON_DATA()        \
+#define ESP_UI_PHONE_320_240_DARK_APP_LAUNCHER_ICON_DATA()        \
     {                                                             \
         .main = {                                                 \
-            .size = ESP_UI_STYLE_SIZE_SQUARE(128),                \
+            .size = ESP_UI_STYLE_SIZE_SQUARE(140),                \
             .layout_row_pad = 10,                                 \
         },                                                        \
         .image = {                                                \
@@ -27,7 +27,7 @@ extern "C" {
         },                                                        \
     }
 
-#define ESP_UI_PHONE_[T_WIDTH]_[T_HEIGHT]_DARK_APP_LAUNCHER_DATA()                       \
+#define ESP_UI_PHONE_320_240_DARK_APP_LAUNCHER_DATA()                       \
     {                                                                       \
         .main = {                                                           \
             .y_start = 0,                                                   \
@@ -35,17 +35,18 @@ extern "C" {
         },                                                                  \
         .table = {                                                          \
             .default_num = 3,                                               \
-            .size = ESP_UI_STYLE_SIZE_RECT_PERCENT(100, 72),                \
+            .size = ESP_UI_STYLE_SIZE_RECT_PERCENT(100, 80),                \
         },                                                                  \
         .indicator = {                                                      \
-            .main_size = ESP_UI_STYLE_SIZE_RECT_W_PERCENT(100, 50),         \
+            .main_size = ESP_UI_STYLE_SIZE_RECT_PERCENT(100, 20),           \
             .main_layout_column_pad = 10,                                   \
+            .main_layout_bottom_offset = 0,                                 \
             .spot_inactive_size = ESP_UI_STYLE_SIZE_SQUARE_PERCENT(30),     \
-            .spot_active_size = ESP_UI_STYLE_SIZE_RECT_H_PERCENT(40, 30),   \
+            .spot_active_size = ESP_UI_STYLE_SIZE_RECT_PERCENT(10, 30),     \
             .spot_inactive_background_color = ESP_UI_STYLE_COLOR(0xC6C6C6), \
             .spot_active_background_color = ESP_UI_STYLE_COLOR(0xFFFFFF),   \
         },                                                                  \
-        .icon = ESP_UI_PHONE_[T_WIDTH]_[T_HEIGHT]_DARK_APP_LAUNCHER_ICON_DATA(),         \
+        .icon = ESP_UI_PHONE_320_240_DARK_APP_LAUNCHER_ICON_DATA(),         \
         .flags = {                                                          \
             .enable_table_scroll_anim = 0,                                  \
         },                                                                  \

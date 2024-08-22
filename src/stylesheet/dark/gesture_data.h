@@ -11,7 +11,7 @@
 extern "C" {
 #endif
 
-#define ESP_UI_PHONE_[T_WIDTH]_[T_HEIGHT]_DRAK_GESTURE_LEFT_RIGHT_INDICATOR_BAR_DATA() \
+#define ESP_UI_PHONE_320_240_DRAK_GESTURE_LEFT_RIGHT_INDICATOR_BAR_DATA() \
     {                                                                     \
         .main = {                                                         \
             .size_min = ESP_UI_STYLE_SIZE_RECT(10, 4),                    \
@@ -31,7 +31,7 @@ extern "C" {
         },                                                                \
     }
 
-#define ESP_UI_PHONE_[T_WIDTH]_[T_HEIGHT]_DRAK_GESTURE_BOTTOM_INDICATOR_BAR_DATA() \
+#define ESP_UI_PHONE_320_240_DRAK_GESTURE_BOTTOM_INDICATOR_BAR_DATA() \
     {                                                                 \
         .main = {                                                     \
             .size_min = ESP_UI_STYLE_SIZE_RECT(4, 10),                \
@@ -51,12 +51,12 @@ extern "C" {
         },                                                            \
     }
 
-#define ESP_UI_PHONE_[T_WIDTH]_[T_HEIGHT]_DARK_GESTURE_DATA()                                   \
+#define ESP_UI_PHONE_320_240_DARK_GESTURE_DATA()                                   \
     {                                                                              \
         .detect_period_ms = 20,                                                    \
         .threshold = {                                                             \
-            .direction_vertical = 50,                                              \
-            .direction_horizon = 50,                                               \
+            .direction_vertical = 30,                                              \
+            .direction_horizon = 30,                                               \
             .direction_angle = 60,                                                 \
             .top_edge = 50,                                                        \
             .bottom_edge = 50,                                                     \
@@ -67,11 +67,11 @@ extern "C" {
         },                                                                         \
         .indicator_bars = {                                                        \
             [ESP_UI_GESTURE_INDICATOR_BAR_TYPE_LEFT] =                             \
-                ESP_UI_PHONE_[T_WIDTH]_[T_HEIGHT]_DRAK_GESTURE_LEFT_RIGHT_INDICATOR_BAR_DATA(), \
+                ESP_UI_PHONE_320_240_DRAK_GESTURE_LEFT_RIGHT_INDICATOR_BAR_DATA(), \
             [ESP_UI_GESTURE_INDICATOR_BAR_TYPE_RIGHT] =                            \
-                ESP_UI_PHONE_[T_WIDTH]_[T_HEIGHT]_DRAK_GESTURE_LEFT_RIGHT_INDICATOR_BAR_DATA(), \
+                ESP_UI_PHONE_320_240_DRAK_GESTURE_LEFT_RIGHT_INDICATOR_BAR_DATA(), \
             [ESP_UI_GESTURE_INDICATOR_BAR_TYPE_BOTTOM] =                           \
-                ESP_UI_PHONE_[T_WIDTH]_[T_HEIGHT]_DRAK_GESTURE_BOTTOM_INDICATOR_BAR_DATA(),     \
+                ESP_UI_PHONE_320_240_DRAK_GESTURE_BOTTOM_INDICATOR_BAR_DATA(),     \
         },                                                                         \
         .flags = {                                                                 \
             .enable_indicator_bars = {                                             \

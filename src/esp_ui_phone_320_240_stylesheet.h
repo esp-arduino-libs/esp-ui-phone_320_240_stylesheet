@@ -18,21 +18,21 @@ extern "C" {
 #endif
 
 /* Home */
-#define ESP_UI_PHONE_[T_WIDTH]_[T_HEIGHT]_DARK_HOME_DATA()                                     \
+#define ESP_UI_PHONE_320_240_DARK_HOME_DATA()                                     \
     {                                                                             \
         .status_bar = {                                                           \
-            .data = ESP_UI_PHONE_[T_WIDTH]_[T_HEIGHT]_DARK_STATUS_BAR_DATA(),                  \
+            .data = ESP_UI_PHONE_320_240_DARK_STATUS_BAR_DATA(),                  \
             .visual_mode = ESP_UI_STATUS_BAR_VISUAL_MODE_SHOW_FIXED,              \
         },                                                                        \
         .navigation_bar = {                                                       \
-            .data = ESP_UI_PHONE_[T_WIDTH]_[T_HEIGHT]_DARK_NAVIGATION_BAR_DATA(),              \
+            .data = ESP_UI_PHONE_320_240_DARK_NAVIGATION_BAR_DATA(),              \
             .visual_mode = ESP_UI_NAVIGATION_BAR_VISUAL_MODE_SHOW_FLEX,           \
         },                                                                        \
         .app_launcher = {                                                         \
-            .data = ESP_UI_PHONE_[T_WIDTH]_[T_HEIGHT]_DARK_APP_LAUNCHER_DATA(),                \
+            .data = ESP_UI_PHONE_320_240_DARK_APP_LAUNCHER_DATA(),                \
         },                                                                        \
         .recents_screen = {                                                       \
-            .data = ESP_UI_PHONE_[T_WIDTH]_[T_HEIGHT]_DARK_RECENTS_SCREEN_DATA(),              \
+            .data = ESP_UI_PHONE_320_240_DARK_RECENTS_SCREEN_DATA(),              \
             .status_bar_visual_mode = ESP_UI_STATUS_BAR_VISUAL_MODE_HIDE,         \
             .navigation_bar_visual_mode = ESP_UI_NAVIGATION_BAR_VISUAL_MODE_HIDE, \
         },                                                                        \
@@ -47,15 +47,15 @@ extern "C" {
     }
 
 /* Manager */
-#define ESP_UI_PHONE_[T_WIDTH]_[T_HEIGHT]_DARK_MANAGER_DATA()             \
+#define ESP_UI_PHONE_320_240_DARK_MANAGER_DATA()             \
     {                                                        \
-        .gesture = ESP_UI_PHONE_[T_WIDTH]_[T_HEIGHT]_DARK_GESTURE_DATA(), \
+        .gesture = ESP_UI_PHONE_320_240_DARK_GESTURE_DATA(), \
         .gesture_mask_indicator_trigger_time_ms = 150,       \
         .recents_screen = {                                  \
-            .drag_snapshot_y_step = 10,                      \
-            .drag_snapshot_y_threshold = 50,                 \
+            .drag_snapshot_y_step = 5,                       \
+            .drag_snapshot_y_threshold = 30,                 \
             .drag_snapshot_angle_threshold = 60,             \
-            .delete_snapshot_y_threshold = 50,               \
+            .delete_snapshot_y_threshold = 30,               \
         },                                                   \
         .flags = {                                           \
             .enable_gesture = 1,                             \
@@ -64,11 +64,11 @@ extern "C" {
     }
 
 /* Phone */
-#define ESP_UI_PHONE_[T_WIDTH]_[T_HEIGHT]_DARK_STYLESHEET()               \
+#define ESP_UI_PHONE_320_240_DARK_STYLESHEET()               \
     {                                                        \
-        .core = ESP_UI_PHONE_[T_WIDTH]_[T_HEIGHT]_DARK_CORE_DATA(),       \
-        .home = ESP_UI_PHONE_[T_WIDTH]_[T_HEIGHT]_DARK_HOME_DATA(),       \
-        .manager = ESP_UI_PHONE_[T_WIDTH]_[T_HEIGHT]_DARK_MANAGER_DATA(), \
+        .core = ESP_UI_PHONE_320_240_DARK_CORE_DATA(),       \
+        .home = ESP_UI_PHONE_320_240_DARK_HOME_DATA(),       \
+        .manager = ESP_UI_PHONE_320_240_DARK_MANAGER_DATA(), \
     }
 
 #ifdef __cplusplus

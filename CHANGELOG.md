@@ -4,4 +4,4 @@
 
 ### Enhancements:
 
-* feat: support phone stylesheet v0.2.x
+* feat(repo): support esp-ui phone 320x240 resolution

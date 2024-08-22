@@ -12,12 +12,14 @@
 extern "C" {
 #endif
 
+LV_IMG_DECLARE(esp_ui_phone_320_240_wallpaper_image_drak);
+
 /* Home */
-#define ESP_UI_PHONE_[T_WIDTH]_[T_HEIGHT]_DARK_CORE_HOME_DATA()                                      \
+#define ESP_UI_PHONE_320_240_DARK_CORE_HOME_DATA()                                      \
     {                                                                                   \
         .background = {                                                                 \
             .color = ESP_UI_STYLE_COLOR(0x1A1A1A),                                      \
-            .wallpaper_image_resource = NULL,                                           \
+            .wallpaper_image_resource = ESP_UI_STYLE_IMAGE(&esp_ui_phone_320_240_wallpaper_image_drak), \
         },                                                                              \
         .text = {                                                                       \
             .default_fonts_num = 21,                                                    \
@@ -58,7 +60,7 @@ extern "C" {
     }
 
 /* manager */
-#define ESP_UI_PHONE_[T_WIDTH]_[T_HEIGHT]_DARK_CORE_MANAGER_DATA() \
+#define ESP_UI_PHONE_320_240_DARK_CORE_MANAGER_DATA() \
     {                                                 \
         .app = {                                      \
             .max_running_num = 3,                     \
@@ -69,13 +71,13 @@ extern "C" {
     }
 
 /* Core */
-#define ESP_UI_PHONE_[T_WIDTH]_[T_HEIGHT]_DARK_CORE_INFO_DATA_NAME    "EUI-Phone Default Drak"
-#define ESP_UI_PHONE_[T_WIDTH]_[T_HEIGHT]_DARK_CORE_DATA()                     \
+#define ESP_UI_PHONE_320_240_DARK_CORE_INFO_DATA_NAME    "EUI-Phone Default Drak"
+#define ESP_UI_PHONE_320_240_DARK_CORE_DATA()                     \
     {                                                             \
-        .name = ESP_UI_PHONE_[T_WIDTH]_[T_HEIGHT]_DARK_CORE_INFO_DATA_NAME,    \
+        .name = ESP_UI_PHONE_320_240_DARK_CORE_INFO_DATA_NAME,    \
         .screen_size = ESP_UI_STYLE_SIZE_RECT(320, 240),          \
-        .home = ESP_UI_PHONE_[T_WIDTH]_[T_HEIGHT]_DARK_CORE_HOME_DATA(),       \
-        .manager = ESP_UI_PHONE_[T_WIDTH]_[T_HEIGHT]_DARK_CORE_MANAGER_DATA(), \
+        .home = ESP_UI_PHONE_320_240_DARK_CORE_HOME_DATA(),       \
+        .manager = ESP_UI_PHONE_320_240_DARK_CORE_MANAGER_DATA(), \
     }
 
 #ifdef __cplusplus
